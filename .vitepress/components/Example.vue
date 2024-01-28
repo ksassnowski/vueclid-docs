@@ -17,7 +17,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from "vue";
-import { Vector2 } from "vueclid";
+import { Vector2 } from "@ksassnowski/vueclid";
 
 const angle = ref(-90);
 

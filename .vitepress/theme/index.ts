@@ -14,7 +14,7 @@ import {
   PolyLine,
   Sector,
   Vector,
-} from "vueclid";
+} from "@ksassnowski/vueclid";
 
 import "./styles.css";
 

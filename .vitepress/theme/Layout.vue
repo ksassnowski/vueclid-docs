@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import DefaultTheme from "vitepress/theme";
-import { useColors } from "vueclid";
+import { useColors } from "@ksassnowski/vueclid";
 import { onMounted } from "vue";
 
 const { Layout } = DefaultTheme;

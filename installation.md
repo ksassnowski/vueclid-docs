@@ -7,19 +7,19 @@ Vueclid can be installed with your favorite package manager:
 ::: code-group
 
 ```bash [npm]
-npm install vueclid
+npm install @ksassnowski/vueclid
 ```
 
 ```bash [pnpm]
-pnpm add vueclid
+pnpm add @ksassnowski/vueclid
 ```
 
 ```bash [yarn]
-yarn add vueclid
+yarn add @ksassnowski/vueclid
 ```
 
 ```bash [bun]
-bun add vueclid
+bun add @ksassnowski/vueclid
 ```
 
 :::
