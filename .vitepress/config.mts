@@ -4,6 +4,7 @@ import { nanoid } from "nanoid";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/vueclid-docs/',
   title: "vueclid",
   description: "Delightfully simple math diagrams",
   themeConfig: {
