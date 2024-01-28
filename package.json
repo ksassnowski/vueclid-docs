@@ -12,6 +12,6 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "@ksassnowski/vueclid": "^0.0.2"
+    "@ksassnowski/vueclid": "^0.0.3"
   }
 }
