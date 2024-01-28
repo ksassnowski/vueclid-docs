@@ -2,24 +2,24 @@
 
 ## Installation
 
-svgmath can be installed with your favorite package manager:
+Vueclid can be installed with your favorite package manager:
 
 ::: code-group
 
 ```bash [npm]
-npm install svgmath
+npm install vueclid
 ```
 
 ```bash [pnpm]
-pnpm add svgmath
+pnpm add vueclid
 ```
 
 ```bash [yarn]
-yarn add svgmath
+yarn add vueclid
 ```
 
 ```bash [bun]
-bun add svgmath
+bun add vueclid
 ```
 
 :::
