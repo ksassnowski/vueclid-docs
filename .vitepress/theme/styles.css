@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --vp-c-brand-3: #48a0ba;
+    --vp-home-hero-name-color: var(--vp-c-brand-3);
+}
