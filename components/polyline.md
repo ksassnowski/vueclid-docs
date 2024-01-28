@@ -11,7 +11,7 @@ A polyline is a series of connected line segments.
 
 ::: tip
 
-To draw simple lines or line segments, use the [`Line`](/api/line) component.
+To draw simple lines or line segments, use the [`Line`](/components/line) component.
 
 :::
 
