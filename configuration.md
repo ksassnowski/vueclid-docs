@@ -69,7 +69,7 @@ setDarkMode(darkModeQuery.matches);
 
 ## Customizing Colors
 
-The change the default colors `vueclid` uses, you can use the `setColors` function provided by the `useColors` hook.
+To change the default colors `vueclid` uses, you can use the `setColors` function provided by the `useColors` hook.
 
 ```ts
 function setColors(colors: {
