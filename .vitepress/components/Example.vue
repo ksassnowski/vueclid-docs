@@ -16,9 +16,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from "vue";
-import { Vector2 } from "@ksassnowski/vueclid";
+import { computed, ref } from "vue";
+import { useColors } from "@ksassnowski/vueclid";
 
+const { setColors } = useColors();
+setColors({
+  light: {
+    stroke: "hotpink",
+  },
+});
 const angle = ref(-90);
 
 const fromColor = {

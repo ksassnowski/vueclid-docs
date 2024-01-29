@@ -14,18 +14,18 @@ other components inside a `<Graph>` component.
 
 ## Props
 
-| Name        | Type              | Description                                      | Default                                  |
-|-------------|-------------------|--------------------------------------------------|------------------------------------------|
-| `width`     | `number`          | The width of the graph, in pixels                | `200`                                    |
-| `height`    | `number`          | The height of the graph, in pixels               | `200`                                    |
-| `padding`   | `number`          | The padding around the graph, in pixels          | `30`                                     |
-| `domain-x`  | `PossibleVector2` | The domain of the graph's x-axis                 | `[-5, 5]`                                |
-| `domain-y`  | `PossibleVector2` | The domain of the graph's y-axis                 | `[-5, 5]`                                |
-| `origin`    | `PossibleVector2` | The origin of the axes of the graph              | Halfway between `domain-x` and `domain-y` |
-| `grid-size` | `number`          | The size of the grid squares in local units      | `1`                                      |
-| `axis`      | `boolean`         | Whether to draw the axes                         | `true`                                   |
-| `grid`      | `boolean`         | Whether to draw the grid                         | `true`                                   |
-| `units`     | `boolean`         | Whether to draw the units on the axes            | `true`                                   |
+| Name        | Type              | Description                                 | Default                                   |
+| ----------- | ----------------- | ------------------------------------------- | ----------------------------------------- |
+| `width`     | `number`          | The width of the graph, in pixels           | `200`                                     |
+| `height`    | `number`          | The height of the graph, in pixels          | `200`                                     |
+| `padding`   | `number`          | The padding around the graph, in pixels     | `30`                                      |
+| `domain-x`  | `PossibleVector2` | The domain of the graph's x-axis            | `[-5, 5]`                                 |
+| `domain-y`  | `PossibleVector2` | The domain of the graph's y-axis            | `[-5, 5]`                                 |
+| `origin`    | `PossibleVector2` | The origin of the axes of the graph         | Halfway between `domain-x` and `domain-y` |
+| `grid-size` | `number`          | The size of the grid squares in local units | `1`                                       |
+| `axis`      | `boolean`         | Whether to draw the axes                    | `true`                                    |
+| `grid`      | `boolean`         | Whether to draw the grid                    | `true`                                    |
+| `units`     | `boolean`         | Whether to draw the units on the axes       | `true`                                    |
 
 ## Examples
 
@@ -47,10 +47,7 @@ other components inside a `<Graph>` component.
 
 ```vue
 <template>
-  <Graph 
-    :domain-x="[-2, 2]" 
-    :domain-y="[-4, 4]"
-  />
+  <Graph :domain-x="[-2, 2]" :domain-y="[-4, 4]" />
 </template>
 ```
 
