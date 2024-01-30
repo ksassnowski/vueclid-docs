@@ -14,17 +14,18 @@ For an easier way to draw circles, see the [Circle](/components/circle) componen
 
 :::
 
-
 ## Props
 
-| Name | Description                                               | Type              | Default |
-| --- |-----------------------------------------------------------|-------------------|---------|
-| `radius` | The x and y radii of the ellipse.                         | `PossibleVector2` | `[1,1]` |
-| `position` | The position of the center of the ellipse.                | `PossibleVector2` | `[0,0]` |
-| `color` | The stroke color of the ellipse.                          | `string`          | `#000`  |
-| `line-width` | The stroke line width of the ellipse.                     | `number`          | `1.5`   |
-| `fill` | The fill color of the ellipse.                            | `string`          | _none_  |
-| `dashed` | Whether the ellipse should be drawn with a dashed stroke. | `boolean`         | `false` |
+| Name         | Description                                                            | Type              | Default |
+| ------------ | ---------------------------------------------------------------------- | ----------------- | ------- |
+| `radius`     | The x and y radii of the ellipse.                                      | `PossibleVector2` | `[1,1]` |
+| `position`   | The position of the center of the ellipse.                             | `PossibleVector2` | `[0,0]` |
+| `color`      | The stroke color of the ellipse.                                       | `string`          | `#000`  |
+| `line-width` | The stroke line width of the ellipse.                                  | `number`          | `1.5`   |
+| `fill`       | The fill color of the ellipse.                                         | `string`          | _none_  |
+| `dashed`     | Whether the ellipse should be drawn with a dashed stroke.              | `boolean`         | `false` |
+| `rotation`   | The rotation of the ellipse. In degrees unless `radians` is specified. | `number`          | `0`     |
+| `radians`    | Whether the `rotation` is specified in radians.                        | `boolean`         | `false` |
 
 ## Examples
 
@@ -42,7 +43,6 @@ For an easier way to draw circles, see the [Circle](/components/circle) componen
 
 :::
 
-
 ### Filled Ellipse
 
 ::: example
@@ -51,6 +51,20 @@ For an easier way to draw circles, see the [Circle](/components/circle) componen
 <template>
   <Graph :units="false">
     <Ellipse :radius="[3, 2]" fill="#33aabb33" color="#33aabb" />
+  </Graph>
+</template>
+```
+
+:::
+
+## Rotated Ellipse
+
+::: example
+
+```vue
+<template>
+  <Graph :units="false">
+    <Ellipse :radius="[3, 2]" :rotation="45" />
   </Graph>
 </template>
 ```
