@@ -4,12 +4,10 @@
 
 <script setup lang="ts">
 import DefaultTheme from "vitepress/theme";
-import { useColors } from "@ksassnowski/vueclid";
+import { configureGraphs } from "@ksassnowski/vueclid";
 import { onMounted } from "vue";
 
 const { Layout } = DefaultTheme;
-
-const { setDarkMode } = useColors();
 
 onMounted(() => {
   const observer = new MutationObserver((mutations) => {
@@ -18,14 +16,18 @@ onMounted(() => {
         mutation.type === "attributes" &&
         mutation.attributeName === "class"
       ) {
-        // @ts-ignore
-        setDarkMode(mutation.target.classList.contains("dark"));
+        configureGraphs({
+          // @ts-ignore
+          darkMode: mutation.target.classList.contains("dark"),
+        });
       }
     }
   });
   const node = document.getElementsByTagName("html")[0];
   observer.observe(node, { attributes: true });
 
-  setDarkMode(node.classList.contains("dark"));
+  configureGraphs({
+    darkMode: node.classList.contains("dark"),
+  });
 });
 </script>

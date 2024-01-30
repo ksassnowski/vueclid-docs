@@ -52,10 +52,6 @@ export default defineConfig({
             text: "Plotting discontinuous functions",
             link: "/guides/discontinuous-functions",
           },
-          {
-            text: "Adding Interactivity",
-            link: "/guides/interactivity",
-          },
         ],
       },
     ],
