@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "vueclid"
   text: "Delightfully simple math diagrams"
-  tagline: Something about math and SVG
+  tagline: Build beautiful, interactive math diagrams using Vue.js
   image:
     light: /images/hero_light.svg
     dark: /images/hero_dark.svg

@@ -7,6 +7,7 @@ export default defineConfig({
   base: "/vueclid-docs/",
   title: "vueclid",
   description: "Delightfully simple math diagrams",
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
     logo: {
       light: "/images/logo.svg",
