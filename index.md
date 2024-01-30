@@ -20,7 +20,7 @@ hero:
 
 features:
   - title: Pixel Perfect
-    details: svgmath uses SVG to render math diagrams, so they look great at any resolution.
+    details: Vueclid uses SVG to render math diagrams, so they look great at any resolution.
   - title: Light and Dark Mode supported
     details: Configurable colors for both light and dark mode. Fully reactive, of course.
   - title: Reactive by Default
