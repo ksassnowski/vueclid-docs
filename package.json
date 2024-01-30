@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@ksassnowski/vueclid": "^1.0.2",
+    "@ksassnowski/vueclid": "^1.1.0",
     "markdown-it-container": "^4.0.0",
     "nanoid": "^5.0.4",
     "postcss-preset-env": "^9.3.0",
