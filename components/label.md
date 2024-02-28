@@ -10,12 +10,14 @@
 
 ## Props
 
-| Name | Type                         | Default  | Description                                                |
-| --- |------------------------------|----------|------------------------------------------------------------|
-| `text` | `string`                     | _none_   | The text of the label.                                     |
-| `position` | `PossibleVector2`            | `[0,0]`  | The position of the label. Relative to the label's center. |
-| `color` | `string`                     | `#000`   | The color of the label.                                    |
-| `size` | `"small"`\|`"normal"`\|`"large"` | `normal` | The size of the label.                                     |
+| Name       | Type                             | Default    | Description                                                  |
+| ---        | ------------------------------   | ---------- | ------------------------------------------------------------ |
+| `text`     | `string`                         | _none_     | The text of the label.                                       |
+| `position` | `PossibleVector2`                | `[0,0]`    | The position of the label. Relative to the label's center.   |
+| `color`    | `string`                         | `#000`     | The color of the label.                                      |
+| `size`     | `"small"`\|`"normal"`\|`"large"` | `normal`   | The size of the label.                                       |
+| `rotation` | `number`                         | `0`        | The counter-clockwise rotation of the label in degrees.      |
+| `border`   | `boolean`                        | `true`     | Whether the label should be drawn with a border.             |
 
 ## Examples
 
@@ -66,3 +68,35 @@
 ```
 
 :::
+
+
+### Rotated Label
+
+::: example
+
+```vue
+<template>
+  <Graph :units="false" :grid="false" :axis="false">
+    <Label :position="[0, 2]" text="30° rotation!" :rotation="30" />
+  </Graph>
+</template>
+```
+
+:::
+
+
+### Label Without Border
+
+
+::: example
+
+```vue
+<template>
+  <Graph :units="false" :grid="false" :axis="false">
+    <Label text="Just Text" :border="false" />
+  </Graph>
+</template>
+```
+
+:::
+

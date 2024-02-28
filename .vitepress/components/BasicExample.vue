@@ -9,6 +9,7 @@
         :radius="1.5"
         color="#33aabb"
         :fill="{ light: '#33aabb33', dark: '#33aabb66' }"
+        label="θ"
         dashed
       />
       <Vector :to="to" />

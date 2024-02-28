@@ -5,7 +5,7 @@ Draws a circular arc with a given radius, position, and angle.
 <div class="justify-center items-center flex">
     <Graph :units="false">
         <Arc :from="0" :to="180" :radius="2" :line-width="1.75" />
-        <Arc :position="[2, 0]" :from="180" :to="0" :radius="1" color="red" />
+        <Arc :position="[2, 0]" :from="180" :to="0" :radius="1" color="red" label="α" />
         <Arc :position="[0, -2]" :from="0" :to="270" :radius="1" dashed />
     </Graph>
 </div>
@@ -28,16 +28,18 @@ To draw a circular sector, see the [Sector](/components/sector) component.
 
 ## Props
 
-| Name         | Type              | Default | Description                                                                 |
-| ------------ | ----------------- | ------- | --------------------------------------------------------------------------- |
-| `from`       | `number`          | `0`     | The starting angle of the arc. Defaults to degrees unless `radians` is set. |
-| `to`         | `number`          | `0`     | The ending angle of the arc. Defaults to degrees unless `radians` is set.   |
-| `position`   | `PossibleVector2` | `[0,0]` | The position of the center of the arc.                                      |
-| `radius`     | `number`          | `3`     | The radius of the arc.                                                      |
-| `line-width` | `number`          | `1.25`  | The width of the arc.                                                       |
-| `color`      | `string`          | `#000`  | The stroke color of the arc.                                                |
-| `dashed`     | `boolean`         | `false` | Whether the arc should be dashed.                                           |
-| `radians`    | `boolean`         | `false` | Whether `to` and `from` are provided in radians.                            |
+| Name         | Type                         | Default     | Description                                                                  |
+| ------------ | -----------------            | -------     | ---------------------------------------------------------------------------  |
+| `from`       | `number`                     | `0`         | The starting angle of the arc. Defaults to degrees unless `radians` is set.  |
+| `to`         | `number`                     | `0`         | The ending angle of the arc. Defaults to degrees unless `radians` is set.    |
+| `position`   | `PossibleVector2`            | `[0,0]`     | The position of the center of the arc.                                       |
+| `radius`     | `number`                     | `3`         | The radius of the arc.                                                       |
+| `line-width` | `number`                     | `1.25`      | The width of the arc.                                                        |
+| `color`      | `string`                     | `#000`      | The stroke color of the arc.                                                 |
+| `dashed`     | `boolean`                    | `false`     | Whether the arc should be dashed.                                            |
+| `radians`    | `boolean`                    | `false`     | Whether `to` and `from` are provided in radians.                             |
+| `label`      | `string\|undefined`          | `undefined` | The label of the arc. If provided, will be drawn at the arc's halfway point. |
+| `label-size` | `"small"\|"normal"\|"large"` | `small`     | The size of the label.                                                       |
 
 ## Examples
 
@@ -82,3 +84,20 @@ To draw a circular sector, see the [Sector](/components/sector) component.
 ```
 
 :::
+
+
+### Arc with Label
+
+::: example
+
+```vue
+<template>
+  <Graph :units="false">
+    <Arc :from="0" :to="65" :radius="2" :line-width="1.75" label="α" />
+  </Graph>
+</template>
+```
+
+:::
+
+

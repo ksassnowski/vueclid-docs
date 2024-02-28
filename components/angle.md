@@ -29,15 +29,17 @@ The angle is always drawn **counter-clockwise** from the first vector to the sec
 
 ## Props
 
-| Name         | Type              | Default | Description                         |
-| ------------ | ----------------- | ------- | ----------------------------------- |
-| `a`          | `PossibleVector2` | `null`  | The first point of the angle.       |
-| `b`          | `PossibleVector2` | `null`  | The second point of the angle.      |
-| `c`          | `PossibleVector2` | `null`  | The second point of the angle.      |
-| `radius`     | `number`          | `3`     | The radius of the angle's arc.      |
-| `line-width` | `number`          | `1.75`  | The line width of the angle's arc.  |
-| `color`      | `string`          | `#000`  | The stroke color of the angle.      |
-| `dashed`     | `boolean`         | `false` | Whether the angle should be dashed. |
+| Name         | Type                             | Default     | Description                         |
+| ------------ | -----------------                | -------     | ----------------------------------- |
+| `a`          | `PossibleVector2`                | `null`      | The first point of the angle.       |
+| `b`          | `PossibleVector2`                | `null`      | The second point of the angle.      |
+| `c`          | `PossibleVector2`                | `null`      | The second point of the angle.      |
+| `radius`     | `number`                         | `3`         | The radius of the angle's arc.      |
+| `line-width` | `number`                         | `1.75`      | The line width of the angle's arc.  |
+| `color`      | `string`                         | `#000`      | The stroke color of the angle.      |
+| `dashed`     | `boolean`                        | `false`     | Whether the angle should be dashed. |
+| `label`      | `string\|undefined`              | `undefined` | The label of the angle.             |
+| `label-size` | `"small"\|"normal"\|"large"`     | `small`     | The size of the label.              |
 
 ## Examples
 
@@ -114,6 +116,24 @@ The angle is always drawn **counter-clockwise** from the first vector to the sec
 
 :::
 
+
+### Angle with Label
+
+::: example
+
+```vue
+<template>
+  <Graph :units="false">
+    <Vector :to="[3, -2.2]" />
+    <Vector :to="[1, 3]" />
+    <Angle :a="[3, -2.2]" :b="[0, 0]" :c="[1, 3]" :radius="1.25" label="θ" />
+  </Graph>
+</template>
+```
+
+:::
+
+
 ### Complex Example
 
 ::: example
@@ -126,7 +146,7 @@ The angle is always drawn **counter-clockwise** from the first vector to the sec
     <Point label="a" :position="[-3, 1]" />
     <Point label="b" :position="[1, 2]" label-position="top" />
     <Point label="c" :position="[0, -2]" label-position="left" />
-    <Angle :a="[-3, 1]" :b="[1, 2]" :c="[0, -2]" :radius="1.25" />
+    <Angle :a="[-3, 1]" :b="[1, 2]" :c="[0, -2]" :radius="1.25" label="α" />
     <Line :from="[2, 0]" :to="[2.5, -3]" />
     <Line :from="[2, 0]" :to="[4, -2]" />
     <Angle :c="[2.5, -3]" :b="[2, 0]" :a="[4, -2]" :radius="0.7" dashed />

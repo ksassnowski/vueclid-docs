@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "@ksassnowski/vueclid": "^1.1.0",
     "markdown-it-container": "^4.0.0",
     "nanoid": "^5.0.4",
     "postcss-preset-env": "^9.3.0",
@@ -11,5 +10,8 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@ksassnowski/vueclid": "^1.2.0"
   }
 }
