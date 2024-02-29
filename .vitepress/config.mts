@@ -46,15 +46,6 @@ export default defineConfig({
           { text: "Plot", link: "/components/function-plot" },
         ],
       },
-      {
-        text: "Guides",
-        items: [
-          {
-            text: "Plotting discontinuous functions",
-            link: "/guides/discontinuous-functions",
-          },
-        ],
-      },
     ],
 
     socialLinks: [
