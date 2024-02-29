@@ -7,12 +7,6 @@
     </Graph>
 </div>
 
-::: tip
-
-Plotting discontinuous functions requires a little bit of extra work. See [this guide](/guides/discontinuous-functions) for more details.
-
-:::
-
 ## Props
 
 | Name         | Description                                         | Type                                   | Default                           |
