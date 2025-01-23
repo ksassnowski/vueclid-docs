@@ -33,7 +33,7 @@ The angle is always drawn **counter-clockwise** from the first vector to the sec
 | ------------ | -----------------                | -------     | ----------------------------------- |
 | `a`          | `PossibleVector2`                | `null`      | The first point of the angle.       |
 | `b`          | `PossibleVector2`                | `null`      | The second point of the angle.      |
-| `c`          | `PossibleVector2`                | `null`      | The second point of the angle.      |
+| `c`          | `PossibleVector2`                | `null`      | The third point of the angle.       |
 | `radius`     | `number`                         | `3`         | The radius of the angle's arc.      |
 | `line-width` | `number`                         | `1.75`      | The line width of the angle's arc.  |
 | `color`      | `string`                         | `#000`      | The stroke color of the angle.      |
