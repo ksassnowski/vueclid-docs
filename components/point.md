@@ -12,9 +12,9 @@
 ## Props
 
 | Name             | Type                               | Default  | Description                                                                      |
-| ---------------- | ---------------------------------- | -------- | -------------------------------------------------------------------------------- |
+|------------------| ---------------------------------- | -------- | -------------------------------------------------------------------------------- |
 | `position`       | `PossibleVector2`                  | `[0,0]`  | The position of the point.                                                       |
-| `stroke`         | `string`                           | `#000`   | The stroke of the point and label (if applicable).                               |
+| `color`          | `string`                           | `#000`   | The color of the point and label (if applicable).                               |
 | `label`          | `string`                           | _none_   | The label of the point.                                                          |
 | `label-position` | `"left"\|"right"\|"top"\|"bottom"` | `bottom` | The position of the label relative to the point.                                 |
 | `filled`         | `boolean`                          | `true`   | Whether the point should be filled.                                              |
